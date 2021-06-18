@@ -55,9 +55,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "start:el": "concurrently \"cross-env BROWSER=none npm run start\" \"wait-on http://localhost:3000 && electron .\"",
+    "start:el": "concurrently \"cross-env BROWSER=none yarn start\" \"wait-on http://localhost:3000 && electron .\"",
     "electron-build": "electron-builder",
-    "build:prod": "npm run build && npm run electron-build"
+    "build:prod": "yarn build && yarn electron-build"
   },
   "eslintConfig": {
     "extends": [
